@@ -1,9 +1,9 @@
 [build]
   # Directory to change to before starting a build
-  base = "."
+  base = "kedai-mae"
   
   # Directory that contains the deploy-ready HTML files and assets
-  publish = "dist"
+  publish = "kedai-mae/dist"
   
   # Default build command
   command = "npm run build"
