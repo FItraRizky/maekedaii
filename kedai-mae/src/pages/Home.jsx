@@ -252,26 +252,33 @@ const Home = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="section cta-section">
+      {/* Parallax CTA Section */}
+      <section className="parallax-cta-section">
+        <div 
+          className="parallax-background"
+          style={{
+            transform: window.innerWidth > 768 ? `translateY(${scrollY * 0.4}px)` : 'none'
+          }}
+        ></div>
+        <div className="parallax-overlay"></div>
         <div className="container">
-          <motion.div 
-            className="cta-content"
-            initial={{ opacity: 0, y: 30 }}
+          <motion.div
+            className="parallax-content"
+            initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="cta-title">Siap Menikmati Kelezatan Kedai Mae?</h2>
-            <p className="cta-subtitle">
-              Pesan sekarang dan rasakan pengalaman kuliner yang tak terlupakan
+            <h2 className="parallax-title">Rasakan Pengalaman Kuliner Terbaik</h2>
+            <p className="parallax-subtitle">
+              Bergabunglah dengan ribuan pelanggan yang telah merasakan kelezatan autentik Kedai Mae
             </p>
-            <div className="cta-buttons">
-              <Link to="/menu" className="btn btn-primary cta-btn">
+            <div className="parallax-buttons">
+              <Link to="/menu" className="btn btn-primary parallax-btn">
                 Pesan Sekarang
               </Link>
-              <Link to="/contact" className="btn btn-secondary cta-btn">
-                Hubungi Kami
+              <Link to="/about" className="btn btn-secondary parallax-btn">
+                Tentang Kami
               </Link>
             </div>
           </motion.div>

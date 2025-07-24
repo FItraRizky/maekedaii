@@ -22,6 +22,8 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+  will-change: transform;
+  transition: transform 0.1s ease-out;
 }
 
 .hero-overlay {

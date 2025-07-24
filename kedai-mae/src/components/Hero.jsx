@@ -1,17 +1,28 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import './Hero.css';
 
 const Hero = () => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <section className="hero">
       <div className="hero-background">
         <div className="hero-overlay"></div>
         <img 
-          src="https://picsum.photos/1920/1080?random=1" 
+          src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
           alt="Delicious Indonesian Food"
           className="hero-image"
+          style={{
+            transform: `translateY(${scrollY * 0.5}px)`
+          }}
         />
       </div>
       
