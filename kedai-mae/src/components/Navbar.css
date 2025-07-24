@@ -1,0 +1,506 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--primary-white);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.navbar .container {
+  position: relative;
+}
+
+.navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.navbar-logo {
+  text-decoration: none;
+  color: var(--primary-brown);
+}
+
+.logo-text {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: var(--primary-brown);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navbar-link:hover {
+  background-color: var(--cream);
+  color: var(--dark-brown);
+}
+
+.navbar-link.active {
+  background-color: var(--primary-brown);
+  color: var(--primary-white);
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cart-button {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  color: var(--primary-brown);
+}
+
+.cart-button:hover {
+  background-color: var(--cream);
+}
+
+.cart-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: var(--primary-brown);
+  color: var(--primary-white);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.mobile-menu-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: var(--primary-brown);
+  border-radius: 8px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.mobile-menu-button:hover {
+  background-color: var(--light-gray);
+  transform: scale(1.05);
+}
+
+.mobile-menu-button:active {
+  transform: scale(0.95);
+}
+
+.menu-icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: center;
+}
+
+.mobile-menu-button .menu-icon {
+  animation: menuIconPulse 0.3s ease-out;
+}
+
+/* Smooth rotation animation for hamburger to X transition */
+.mobile-menu-button[aria-expanded="true"] .menu-icon {
+  transform: rotate(180deg) scale(1.1);
+}
+
+.mobile-menu-button[aria-expanded="false"] .menu-icon {
+  transform: rotate(0deg) scale(1);
+}
+
+@keyframes menuIconPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Additional smooth entrance animation for icons */
+@keyframes iconFadeIn {
+  0% {
+    opacity: 0;
+    transform: rotate(-90deg) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+.mobile-menu-button .menu-icon {
+  animation: iconFadeIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid var(--light-gray);
+  padding: 1rem 0;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 0 0 16px 16px;
+}
+
+.mobile-menu.open {
+  max-height: 350px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Mobile menu backdrop effect */
+.mobile-menu::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  border-radius: 0 0 16px 16px;
+  z-index: -1;
+}
+
+.mobile-menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-menu-list li {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu.open .mobile-menu-list li {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.mobile-menu.open .mobile-menu-list li:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.mobile-menu.open .mobile-menu-list li:nth-child(2) {
+  transition-delay: 0.15s;
+}
+
+.mobile-menu.open .mobile-menu-list li:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.mobile-menu.open .mobile-menu-list li:nth-child(4) {
+  transition-delay: 0.25s;
+}
+
+.mobile-menu-link {
+  display: block;
+  text-decoration: none;
+  color: var(--primary-brown);
+  padding: 1rem 0;
+  font-weight: 500;
+  border-bottom: 1px solid var(--light-gray);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.mobile-menu-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.mobile-menu-link:hover::before {
+  left: 100%;
+}
+
+.mobile-menu-link:hover {
+  background-color: var(--cream);
+  padding-left: 1rem;
+  transform: translateX(5px);
+}
+
+.mobile-menu-link.active {
+  color: var(--primary-brown);
+  background-color: var(--cream);
+  font-weight: 600;
+  transform: translateX(5px);
+}
+
+/* Desktop Menu Hide on Mobile */
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+  
+  .mobile-menu-button {
+    display: block;
+  }
+  
+  .navbar-content {
+    padding: 0.75rem 0;
+  }
+  
+  .logo-text {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-text {
+    font-size: 1.3rem;
+  }
+  
+  .cart-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .menu-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .theme-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+  background: none;
+  border: none;
+  color: var(--text-dark);
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  margin-right: 8px;
+}
+
+.dark-mode-toggle:hover {
+  background-color: var(--light-gray);
+  transform: scale(1.1);
+}
+
+.theme-icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease;
+}
+
+/* Mobile Dark Mode Toggle */
+.mobile-dark-mode-toggle {
+  background: none;
+  border: none;
+  color: var(--text-dark);
+  cursor: pointer;
+  padding: 12px 20px;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.mobile-dark-mode-toggle:hover {
+  background-color: var(--light-gray);
+}
+
+.mobile-theme-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Dark mode styles */
+.dark-mode .navbar {
+  background-color: var(--primary-brown);
+  border-bottom: 1px solid var(--dark-brown);
+}
+
+.dark-mode .navbar.scrolled {
+  background-color: rgba(139, 69, 19, 0.95);
+}
+
+.dark-mode .navbar-logo,
+.dark-mode .navbar-link {
+  color: var(--primary-white);
+}
+
+/* Dark mode mobile menu */
+.dark-mode .mobile-menu {
+  background-color: rgba(139, 69, 19, 0.95);
+  backdrop-filter: blur(15px);
+  border-top: 1px solid var(--dark-brown);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .mobile-menu::before {
+  background: linear-gradient(135deg, rgba(139, 69, 19, 0.2), rgba(139, 69, 19, 0.1));
+}
+
+.dark-mode .mobile-menu-button {
+  color: var(--primary-white);
+}
+
+.dark-mode .mobile-menu-button:hover {
+  background-color: var(--dark-brown);
+}
+
+.dark-mode .mobile-menu-link {
+  color: var(--primary-white);
+  border-bottom: 1px solid var(--dark-brown);
+}
+
+.dark-mode .mobile-menu-link:hover {
+  background-color: var(--dark-brown);
+  color: var(--accent-gold);
+}
+
+.dark-mode .mobile-menu-link.active {
+  background-color: var(--dark-brown);
+  color: var(--accent-gold);
+}
+
+.dark-mode .navbar-link:hover {
+  background-color: var(--dark-brown);
+  color: var(--accent-gold);
+}
+
+.dark-mode .navbar-link.active {
+  color: var(--accent-gold);
+  background-color: var(--dark-brown);
+}
+
+.dark-mode .cart-button {
+  color: var(--primary-white);
+}
+
+.dark-mode .cart-button:hover {
+  background-color: var(--dark-brown);
+}
+
+.dark-mode .cart-badge {
+  background-color: var(--accent-gold);
+  color: var(--primary-brown);
+}
+
+.dark-mode .mobile-menu-button {
+  color: var(--primary-white);
+}
+
+.dark-mode .mobile-menu {
+  background-color: var(--primary-brown);
+  border-top: 1px solid var(--dark-brown);
+}
+
+.dark-mode .mobile-menu-link {
+  color: var(--primary-white);
+  border-bottom: 1px solid var(--dark-brown);
+}
+
+.dark-mode .mobile-menu-link:hover {
+  background-color: var(--dark-brown);
+  color: var(--accent-gold);
+}
+
+.dark-mode .mobile-menu-link.active {
+  color: var(--accent-gold);
+  background-color: var(--dark-brown);
+}
+
+.dark-mode .dark-mode-toggle {
+  color: var(--primary-white);
+}
+
+.dark-mode .dark-mode-toggle:hover {
+  background-color: var(--dark-brown);
+}
+
+.dark-mode .mobile-dark-mode-toggle {
+  color: var(--primary-white);
+  border-bottom: 1px solid var(--dark-brown);
+}
+
+.dark-mode .mobile-dark-mode-toggle:hover {
+  background-color: var(--dark-brown);
+}
+
+/* Animation for mobile menu */
+.mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.mobile-menu.open {
+  max-height: 300px;
+}
