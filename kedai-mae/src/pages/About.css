@@ -6,17 +6,20 @@
 .about-hero {
   position: relative;
   height: 60vh;
-  background: linear-gradient(
+  background-image: linear-gradient(
     rgba(107, 66, 38, 0.8),
     rgba(107, 66, 38, 0.6)
   ),
-  url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center/cover;
+  url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--primary-white);
   text-align: center;
-  background-attachment: fixed;
   overflow: hidden;
 }
 
@@ -551,6 +554,12 @@
   }
 }
 
+@media (max-width: 768px) {
+  .about-hero {
+    background-attachment: scroll;
+  }
+}
+
 @media (max-width: 480px) {
   .about-page {
     padding-top: 70px;
@@ -558,6 +567,7 @@
   
   .about-hero {
     height: 50vh;
+    background-attachment: scroll;
   }
   
   .hero-title {
