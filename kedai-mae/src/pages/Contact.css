@@ -112,7 +112,7 @@
 .contact-info-title {
   font-size: 1.3rem;
   font-weight: 600;
-  color: var(--primary-brown);
+  color: var(--text-light);
   margin-bottom: 20px;
 }
 
@@ -156,7 +156,7 @@
 .form-title {
   font-size: 2rem;
   font-weight: 600;
-  color: var(--primary-brown);
+  color: var(--text-light);
   margin-bottom: 10px;
 }
 
@@ -186,7 +186,7 @@
 .form-label {
   font-size: 1rem;
   font-weight: 500;
-  color: var(--primary-brown);
+  color: var(--text-light);
   margin-bottom: 8px;
 }
 
@@ -295,7 +295,7 @@
 .map-title {
   font-size: 2rem;
   font-weight: 600;
-  color: var(--primary-brown);
+  color: var(--text-light);
   margin-bottom: 10px;
 }
 
@@ -333,7 +333,7 @@
 .map-info-icon {
   width: 24px;
   height: 24px;
-  color: var(--primary-brown);
+  color: var(--text-light);
   margin-top: 2px;
   flex-shrink: 0;
 }
@@ -341,7 +341,7 @@
 .map-info-item h4 {
   font-size: 1.1rem;
   font-weight: 600;
-  color: var(--primary-brown);
+  color: var(--text-light);
   margin: 0 0 5px 0;
 }
 
@@ -380,7 +380,7 @@
 .faq-question {
   font-size: 1.2rem;
   font-weight: 600;
-  color: var(--primary-brown);
+  color: var(--text-light);
   margin-bottom: 15px;
   line-height: 1.4;
 }
@@ -405,7 +405,7 @@
 .section-title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--primary-brown);
+  color: var(--text-light);
   margin-bottom: 20px;
   position: relative;
 }

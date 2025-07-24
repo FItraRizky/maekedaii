@@ -11,7 +11,7 @@
   text-align: center;
   margin-bottom: 50px;
   font-size: 2.5rem;
-  color: var(--primary-brown);
+  color: var(--text-light);
   font-weight: 700;
 }
 
@@ -72,7 +72,7 @@
   text-align: center;
   margin-bottom: 50px;
   font-size: 2.5rem;
-  color: var(--primary-brown);
+  color: var(--text-light);
   font-weight: 700;
 }
 
@@ -101,12 +101,12 @@
 
 .feature-card .icon {
   font-size: 3rem;
-  color: var(--primary-brown);
+  color: var(--text-light);
   margin-bottom: 20px;
 }
 
 .feature-card h3 {
-  color: var(--primary-brown);
+  color: var(--text-light);
   margin-bottom: 15px;
   font-size: 1.5rem;
   font-weight: 600;
@@ -126,7 +126,7 @@
   text-align: center;
   margin-bottom: 30px;
   font-size: 2.2rem;
-  color: var(--primary-brown);
+  color: var(--text-light);
   font-weight: 700;
 }
 
@@ -245,7 +245,7 @@
 .author-name {
   font-size: 1.1rem;
   font-weight: 600;
-  color: var(--primary-brown);
+  color: var(--text-light);
   margin: 0 0 5px 0;
 }
 
@@ -378,7 +378,7 @@
 
 .cta-btn.btn-secondary {
   background: var(--primary-white);
-  color: var(--primary-brown);
+  color: var(--text-light);
   border: 2px solid var(--primary-white);
 }
 
