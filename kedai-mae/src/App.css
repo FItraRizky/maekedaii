@@ -16,7 +16,7 @@
 
 /* Dark mode styles */
 .dark-mode .App {
-  background: var(--primary-brown);
+  background: #000000;
 }
 
 /* Loading states */

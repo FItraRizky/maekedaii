@@ -177,16 +177,16 @@ html {
 
 /* Dark mode styles */
 .dark-mode {
-  --primary-white: #323232;
+  --primary-white: #000000;
   --text-dark: #ffffff;
   --text-light: #ffffff;
-  --light-gray: #2a2a2a;
-  --cream: #F5F5F5;
-  --shadow: rgba(128, 0, 32, 0.3);
+  --light-gray: #1a1a1a;
+  --cream: #111111;
+  --shadow: rgba(255, 255, 255, 0.1);
 }
 
 .dark-mode .card {
-  background: #2a2a2a;
+  background: #000000;
   color: var(--text-dark);
 }
 
