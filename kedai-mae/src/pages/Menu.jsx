@@ -11,10 +11,10 @@ const Menu = () => {
   const allMenuItems = getAllMenu();
 
   const categories = [
-    { id: 'all', name: 'Semua Menu', icon: '🍽️' },
-    { id: 'makanan', name: 'Makanan', icon: '🍛' },
-    { id: 'minuman', name: 'Minuman', icon: '🥤' },
-    { id: 'cemilan', name: 'Cemilan', icon: '🍪' }
+    { id: 'all', name: 'Semua Menu', icon: 'Menu' },
+    { id: 'makanan', name: 'Makanan', icon: 'Makanan' },
+    { id: 'minuman', name: 'Minuman', icon: 'Minuman' },
+    { id: 'cemilan', name: 'Cemilan', icon: 'Cemilan' }
   ];
 
   const filteredItems = useMemo(() => {
@@ -135,7 +135,7 @@ const Menu = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
             >
-              <div className="no-results-icon">🔍</div>
+              <div className="no-results-icon">Pencarian</div>
               <h3>Tidak ada menu yang ditemukan</h3>
               <p>
                 {searchTerm

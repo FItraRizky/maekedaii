@@ -159,7 +159,7 @@ const LoadingScreen = () => {
             }
           }}
         >
-          🍛
+          Nasi
         </motion.div>
         <motion.div 
           className="food-icon food-icon-2"
@@ -174,7 +174,7 @@ const LoadingScreen = () => {
             }
           }}
         >
-          🥤
+          Minuman
         </motion.div>
         <motion.div 
           className="food-icon food-icon-3"
@@ -189,7 +189,7 @@ const LoadingScreen = () => {
             }
           }}
         >
-          🍪
+          Cemilan
         </motion.div>
         <motion.div 
           className="food-icon food-icon-4"
@@ -204,7 +204,7 @@ const LoadingScreen = () => {
             }
           }}
         >
-          🍜
+          Mie
         </motion.div>
       </div>
 

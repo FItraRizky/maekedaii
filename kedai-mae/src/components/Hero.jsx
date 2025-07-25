@@ -75,22 +75,22 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 1 }}
           >
             <div className="feature-item">
-              <div className="feature-icon">🍽️</div>
+              <div className="feature-icon">Cita Rasa</div>
               <span>Cita Rasa Autentik</span>
             </div>
             
             <div className="feature-item">
-              <div className="feature-icon">🌿</div>
+              <div className="feature-icon">Bahan Segar</div>
               <span>Bahan Segar</span>
             </div>
             
             <div className="feature-item">
-              <div className="feature-icon">⚡</div>
+              <div className="feature-icon">Cepat</div>
               <span>Pelayanan Cepat</span>
             </div>
             
             <div className="feature-item">
-              <div className="feature-icon">💝</div>
+              <div className="feature-icon">Terjangkau</div>
               <span>Harga Terjangkau</span>
             </div>
           </motion.div>

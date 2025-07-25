@@ -233,7 +233,7 @@ const About = () => {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <div className="mission-icon">🎯</div>
+              <div className="mission-icon">Visi</div>
               <h3 className="mission-title">Visi Kami</h3>
               <p className="mission-text">
                 Menjadi kedai makanan dan minuman terdepan yang menghadirkan cita rasa autentik 
@@ -249,7 +249,7 @@ const About = () => {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <div className="mission-icon">🚀</div>
+              <div className="mission-icon">Misi</div>
               <h3 className="mission-title">Misi Kami</h3>
               <p className="mission-text">
                 Menyajikan hidangan berkualitas tinggi dengan bahan-bahan segar, memberikan 

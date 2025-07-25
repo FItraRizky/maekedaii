@@ -124,7 +124,7 @@ const Home = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              <div className="feature-icon">🍽️</div>
+              <div className="feature-icon">Cita Rasa</div>
               <h3>Cita Rasa Autentik</h3>
               <p>Resep turun temurun yang telah terjaga keasliannya selama bertahun-tahun</p>
             </motion.div>
@@ -136,7 +136,7 @@ const Home = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <div className="feature-icon">🌿</div>
+              <div className="feature-icon">Bahan Segar</div>
               <h3>Bahan Berkualitas</h3>
               <p>Menggunakan bahan-bahan segar pilihan terbaik dari petani lokal</p>
             </motion.div>
@@ -148,7 +148,7 @@ const Home = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
             >
-              <div className="feature-icon">⚡</div>
+              <div className="feature-icon">Cepat</div>
               <h3>Pelayanan Cepat</h3>
               <p>Sistem pemesanan yang efisien untuk pengalaman yang memuaskan</p>
             </motion.div>
@@ -160,7 +160,7 @@ const Home = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              <div className="feature-icon">💝</div>
+              <div className="feature-icon">Terjangkau</div>
               <h3>Harga Terjangkau</h3>
               <p>Kualitas premium dengan harga yang ramah di kantong</p>
             </motion.div>
