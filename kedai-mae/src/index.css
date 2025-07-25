@@ -3,11 +3,11 @@
 :root {
   --primary-brown: #6B4226;
   --primary-white: #FFFFFF;
-  --cream: #F6EBD9;
+  --cream: #DDD0C8;
   --light-gray: #EDEDED;
   --dark-brown: #5a3620;
   --light-brown: #A67C5A;
-  --text-dark: #2c2c2c;
+  --text-dark: #323232;
   --text-light: #A67C5A;
   --shadow: rgba(107, 66, 38, 0.1);
 }
@@ -177,11 +177,11 @@ html {
 
 /* Dark mode styles */
 .dark-mode {
-  --primary-white: #1a1a1a;
+  --primary-white: #323232;
   --text-dark: #ffffff;
   --text-light: #ffffff;
   --light-gray: #2a2a2a;
-  --cream: #2d2520;
+  --cream: #DDD0C8;
   --shadow: rgba(0, 0, 0, 0.3);
 }
 
