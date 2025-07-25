@@ -7,6 +7,7 @@
   justify-content: center;
   overflow: hidden;
   padding-top: 60px;
+  margin-top: -72px;
 }
 
 .hero-background {
@@ -35,9 +36,9 @@
   height: 100%;
   background: linear-gradient(
     135deg,
-    rgba(128, 0, 32, 0.8) 0%,
-    rgba(128, 0, 32, 0.6) 50%,
-    rgba(128, 0, 32, 0.4) 100%
+    rgba(128, 0, 32, 0.3) 0%,
+    rgba(128, 0, 32, 0.2) 50%,
+    rgba(128, 0, 32, 0.1) 100%
   );
   z-index: 1;
 }
@@ -171,6 +172,7 @@
     min-height: 500px;
     height: 100vh;
     padding-top: 50px;
+    margin-top: -60px;
   }
   
 
@@ -222,6 +224,7 @@
 @media (max-width: 480px) {
   .hero {
     padding-top: 45px;
+    margin-top: -55px;
   }
   
 
