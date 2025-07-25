@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Bars3Icon, XMarkIcon, ShoppingCartIcon } from '@heroicons/react/24/outline';
 import { useApp } from '../context/AppContext';
+import maeLogo from '../assets/mae-logo.svg';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -42,6 +43,7 @@ const Navbar = () => {
         <div className="navbar-content">
           {/* Logo */}
           <Link to="/" className="navbar-logo" onClick={closeMenu}>
+            <img src={maeLogo} alt="Mae Snack Logo" className="logo-image" />
             <span className="logo-text">Kedai Mae</span>
           </Link>
 

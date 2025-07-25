@@ -11,10 +11,10 @@ const Menu = () => {
   const allMenuItems = getAllMenu();
 
   const categories = [
-    { id: 'all', name: 'Semua Menu', icon: 'Menu' },
-    { id: 'makanan', name: 'Makanan', icon: 'Makanan' },
-    { id: 'minuman', name: 'Minuman', icon: 'Minuman' },
-    { id: 'cemilan', name: 'Cemilan', icon: 'Cemilan' }
+    { id: 'all', name: 'Semua Menu', icon: '' },
+    { id: 'makanan', name: 'Makanan', icon: '' },
+    { id: 'minuman', name: 'Minuman', icon: '' },
+    { id: 'cemilan', name: 'Cemilan', icon: '' }
   ];
 
   const filteredItems = useMemo(() => {
@@ -156,30 +156,7 @@ const Menu = () => {
           )}
         </motion.div>
 
-        {/* Popular Items Section */}
-        {activeCategory === 'all' && !searchTerm && (
-          <motion.div 
-            className="popular-section"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.7 }}
-          >
-            <div className="popular-header">
-              <h2>Menu Populer</h2>
-              <p>Hidangan favorit yang paling banyak dipesan</p>
-            </div>
-            <div className="popular-tags">
-              {allMenuItems
-                .filter(item => item.popular)
-                .map(item => (
-                  <span key={item.id} className="popular-tag">
-                    {item.name}
-                  </span>
-                ))
-              }
-            </div>
-          </motion.div>
-        )}
+
 
         {/* Quick Stats */}
         <motion.div 

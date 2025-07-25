@@ -97,16 +97,7 @@ const Hero = () => {
         </div>
       </div>
       
-      {/* Scroll indicator */}
-      <motion.div 
-        className="scroll-indicator"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1.5 }}
-      >
-        <div className="scroll-arrow"></div>
-        <span>Scroll untuk melihat menu</span>
-      </motion.div>
+
     </section>
   );
 };

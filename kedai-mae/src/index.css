@@ -7,6 +7,7 @@
   --light-gray: #EDEDED;
   --dark-brown: #660019;
   --light-brown: #A0002B;
+  --accent-brown: #A0002B;
   --text-dark: #323232;
   --text-light: #800020;
   --shadow: rgba(128, 0, 32, 0.1);
@@ -23,6 +24,7 @@ body {
   line-height: 1.6;
   color: var(--text-dark);
   background-color: var(--primary-white);
+  padding-top: 80px; /* Kompensasi untuk navbar fixed */
 }
 
 .container {
@@ -205,4 +207,17 @@ html {
 .scroll-to-top:hover {
   background-color: var(--dark-brown);
   transform: translateY(-3px);
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  body {
+    padding-top: 70px; /* Reduced padding for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding-top: 65px; /* Further reduced for small mobile */
+  }
 }

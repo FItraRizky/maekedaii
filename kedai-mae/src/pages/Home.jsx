@@ -63,6 +63,8 @@ const Home = () => {
       {/* Hero Section */}
       <Hero />
 
+
+
       {/* Popular Menu Section */}
       <section className="section popular-menu">
         <div className="container">
@@ -156,17 +158,7 @@ const Home = () => {
               <div className="feature-action">Klik untuk pesan sekarang →</div>
             </motion.div>
 
-            <motion.div 
-              className="feature-card"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              viewport={{ once: true }}
-            >
-              <div className="feature-icon">Terjangkau</div>
-              <h3>Harga Terjangkau</h3>
-              <p>Kualitas premium dengan harga yang ramah di kantong</p>
-            </motion.div>
+
           </div>
         </div>
       </section>
