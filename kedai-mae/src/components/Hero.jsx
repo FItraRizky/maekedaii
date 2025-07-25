@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { SparklesIcon, HeartIcon, ClockIcon, CurrencyDollarIcon } from '@heroicons/react/24/solid';
 import './Hero.css';
 
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener('scroll', handleScroll);
+    setIsLoaded(true);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -34,16 +37,26 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h1 className="hero-title">
-              Nikmati Lezatnya Setiap Gigitan di 
+            <motion.h1 
+              className="hero-title"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+            >
+              <span className="hero-greeting">Selamat Datang di</span>
               <span className="hero-brand">Kedai Mae</span>
-            </h1>
+              <span className="hero-tagline">Cita Rasa Autentik Indonesia</span>
+            </motion.h1>
             
-            {/* <p className="hero-subtitle">
-              Cita rasa autentik Indonesia dengan sentuhan modern. 
-              Dibuat dengan bahan-bahan segar dan resep turun temurun 
-              yang telah terjaga kualitasnya.
-            </p> */}
+            <motion.p 
+              className="hero-subtitle"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+            >
+              Nikmati kelezatan masakan tradisional Indonesia dengan bahan-bahan segar pilihan 
+              dan resep turun temurun yang telah terjaga kualitasnya sejak puluhan tahun.
+            </motion.p>
             
             <div className="hero-buttons">
               <motion.div
@@ -74,25 +87,53 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1 }}
           >
-            <div className="feature-item">
-              <div className="feature-icon">Cita Rasa</div>
+            <motion.div 
+              className="feature-item"
+              whileHover={{ scale: 1.05, y: -5 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <div className="feature-icon">
+                <SparklesIcon className="icon-svg" />
+              </div>
               <span>Cita Rasa Autentik</span>
-            </div>
+            </motion.div>
             
-            <div className="feature-item">
-              <div className="feature-icon">Bahan Segar</div>
+            <motion.div 
+              className="feature-item"
+              whileHover={{ scale: 1.05, y: -5 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <div className="feature-icon">
+                <HeartIcon className="icon-svg" />
+              </div>
               <span>Bahan Segar</span>
-            </div>
+            </motion.div>
             
-            <div className="feature-item clickable" onClick={() => window.location.href = '/menu'} style={{ cursor: 'pointer' }}>
-              <div className="feature-icon">Cepat</div>
+            <motion.div 
+              className="feature-item clickable" 
+              onClick={() => window.location.href = '/menu'} 
+              style={{ cursor: 'pointer' }}
+              whileHover={{ scale: 1.1, y: -8 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <div className="feature-icon">
+                <ClockIcon className="icon-svg" />
+              </div>
               <span>Pelayanan Cepat</span>
-            </div>
+              <div className="click-indicator">Klik untuk pesan!</div>
+            </motion.div>
             
-            <div className="feature-item">
-              <div className="feature-icon">Terjangkau</div>
+            <motion.div 
+              className="feature-item"
+              whileHover={{ scale: 1.05, y: -5 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <div className="feature-icon">
+                <CurrencyDollarIcon className="icon-svg" />
+              </div>
               <span>Harga Terjangkau</span>
-            </div>
+            </motion.div>
           </motion.div>
         </div>
       </div>

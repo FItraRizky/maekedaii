@@ -1,5 +1,5 @@
 .about-page {
-  padding-top: 80px;
+  /* Removed padding-top to eliminate gap between navbar and hero image */
 }
 
 /* Hero Section */

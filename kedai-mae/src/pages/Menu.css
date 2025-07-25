@@ -1,5 +1,5 @@
 .menu-page {
-  padding-top: 100px;
+  padding-top: 80px; /* Reduced padding to minimize gap with navbar */
   padding-bottom: 60px;
   background: var(--primary-white);
   min-height: 100vh;
