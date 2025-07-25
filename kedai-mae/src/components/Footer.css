@@ -220,7 +220,7 @@
   color: var(--cream);
   border: 2px solid var(--cream);
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(246, 235, 217, 0.3);
+  box-shadow: 0 8px 25px rgba(221, 208, 200, 0.3);
 }
 
 /* Newsletter Section */
@@ -610,7 +610,7 @@
 }
 
 .newsletter-input-container:focus-within {
-  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3), 0 0 0 3px rgba(246, 235, 217, 0.3);
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3), 0 0 0 3px rgba(221, 208, 200, 0.3);
 }
 
 /* Scroll to top button pulse effect */
