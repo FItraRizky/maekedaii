@@ -82,7 +82,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
   z-index: 3;
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); - Removed blur effect */
 }
 
 .like-btn:hover {
@@ -123,7 +123,7 @@
   justify-content: center;
   opacity: 0;
   transition: all 0.4s ease;
-  backdrop-filter: blur(2px);
+  /* backdrop-filter: blur(2px); - Removed blur effect */
 }
 
 .menu-card:hover .image-overlay {

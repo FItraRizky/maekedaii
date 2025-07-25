@@ -90,10 +90,10 @@
   font-size: 4.5rem;
   font-weight: 800;
   text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
-  background: linear-gradient(135deg, var(--accent-gold) 0%, #FFD700 50%, #FFA500 100%);
+  /* background: linear-gradient(135deg, var(--accent-gold) 0%, #FFD700 50%, #FFA500 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
+  background-clip: text; - Removed gradient text effect to fix blur */
   position: relative;
 }
 
@@ -131,7 +131,7 @@
   background: rgba(255, 255, 255, 0.1);
   padding: 20px;
   border-radius: 15px;
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); - Removed blur effect */
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -173,7 +173,7 @@
   padding: 1.5rem 1rem;
   background: rgba(255, 255, 255, 0.15);
   border-radius: 20px;
-  backdrop-filter: blur(15px);
+  /* backdrop-filter: blur(15px); - Removed blur effect */
   border: 2px solid rgba(255, 255, 255, 0.3);
   transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   min-width: 140px;
