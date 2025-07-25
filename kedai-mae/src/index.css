@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --primary-brown: #6B4226;
+  --primary-brown: #800020;
   --primary-white: #FFFFFF;
-  --cream: #DDD0C8;
+  --cream: #F5F5F5;
   --light-gray: #EDEDED;
-  --dark-brown: #5a3620;
-  --light-brown: #A67C5A;
+  --dark-brown: #660019;
+  --light-brown: #A0002B;
   --text-dark: #323232;
-  --text-light: #A67C5A;
-  --shadow: rgba(107, 66, 38, 0.1);
+  --text-light: #800020;
+  --shadow: rgba(128, 0, 32, 0.1);
 }
 
 * {
@@ -181,8 +181,8 @@ html {
   --text-dark: #ffffff;
   --text-light: #ffffff;
   --light-gray: #2a2a2a;
-  --cream: #DDD0C8;
-  --shadow: rgba(0, 0, 0, 0.3);
+  --cream: #F5F5F5;
+  --shadow: rgba(128, 0, 32, 0.3);
 }
 
 .dark-mode .card {

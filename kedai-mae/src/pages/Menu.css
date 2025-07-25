@@ -81,7 +81,7 @@
 
 .search-input:focus {
   border-color: var(--primary-brown);
-  box-shadow: 0 0 0 3px rgba(107, 66, 38, 0.1);
+  box-shadow: 0 0 0 3px rgba(128, 0, 32, 0.1);
 }
 
 .search-input::placeholder {
@@ -121,7 +121,7 @@
   border-color: var(--text-light);
   color: var(--text-light);
   transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(107, 66, 38, 0.2);
+  box-shadow: 0 4px 15px rgba(128, 0, 32, 0.2);
 }
 
 .category-btn.active {
@@ -129,7 +129,7 @@
   border-color: var(--primary-brown);
   color: var(--primary-white);
   transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(107, 66, 38, 0.3);
+  box-shadow: 0 4px 15px rgba(128, 0, 32, 0.3);
 }
 
 .category-icon {

@@ -7,8 +7,8 @@
   position: relative;
   height: 60vh;
   background-image: linear-gradient(
-    rgba(107, 66, 38, 0.8),
-    rgba(107, 66, 38, 0.6)
+    rgba(128, 0, 32, 0.8),
+    rgba(128, 0, 32, 0.6)
   ),
   url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
   background-size: cover;
@@ -31,7 +31,7 @@
   bottom: 0;
   background: linear-gradient(
     135deg,
-    rgba(107, 66, 38, 0.7) 0%,
+    rgba(128, 0, 32, 0.7) 0%,
     rgba(139, 69, 19, 0.5) 100%
   );
 }
@@ -90,7 +90,7 @@
   position: relative;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 20px 40px rgba(107, 66, 38, 0.2);
+  box-shadow: 0 20px 40px rgba(128, 0, 32, 0.2);
 }
 
 .story-image img {
@@ -121,9 +121,9 @@
   padding: 40px 30px;
   border-radius: 20px;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(107, 66, 38, 0.1);
+  box-shadow: 0 10px 30px rgba(128, 0, 32, 0.1);
   transition: all 0.3s ease;
-  border: 1px solid rgba(107, 66, 38, 0.1);
+  border: 1px solid rgba(128, 0, 32, 0.1);
   position: relative;
   overflow: hidden;
 }
@@ -150,7 +150,7 @@
 
 .value-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 50px rgba(107, 66, 38, 0.2);
+  box-shadow: 0 20px 50px rgba(128, 0, 32, 0.2);
 }
 
 .value-icon-container {
@@ -258,13 +258,13 @@
   background: var(--primary-white);
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(107, 66, 38, 0.1);
+  box-shadow: 0 10px 30px rgba(128, 0, 32, 0.1);
   transition: all 0.3s ease;
-  border: 1px solid rgba(107, 66, 38, 0.1);
+  border: 1px solid rgba(128, 0, 32, 0.1);
 }
 
 .team-card:hover {
-  box-shadow: 0 20px 50px rgba(107, 66, 38, 0.2);
+  box-shadow: 0 20px 50px rgba(128, 0, 32, 0.2);
 }
 
 .team-image-container {
@@ -288,7 +288,7 @@
   bottom: 0;
   background: linear-gradient(
     to top,
-    rgba(107, 66, 38, 0.9) 0%,
+    rgba(128, 0, 32, 0.9) 0%,
     transparent 50%
   );
   display: flex;
@@ -355,14 +355,14 @@
   padding: 40px;
   border-radius: 20px;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(107, 66, 38, 0.1);
+  box-shadow: 0 10px 30px rgba(128, 0, 32, 0.1);
   transition: all 0.3s ease;
-  border: 1px solid rgba(107, 66, 38, 0.1);
+  border: 1px solid rgba(128, 0, 32, 0.1);
 }
 
 .mission-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 50px rgba(107, 66, 38, 0.2);
+  box-shadow: 0 20px 50px rgba(128, 0, 32, 0.2);
 }
 
 .mission-icon {
@@ -657,7 +657,7 @@
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(107, 66, 38, 0.05),
+    rgba(128, 0, 32, 0.05),
     transparent
   );
   transition: left 0.5s ease;

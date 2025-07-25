@@ -46,7 +46,7 @@
   justify-content: center;
   box-shadow: 
     0 0 30px rgba(255, 255, 255, 0.3),
-    inset 0 0 30px rgba(107, 66, 38, 0.1);
+    inset 0 0 30px rgba(128, 0, 32, 0.1);
   position: relative;
   overflow: hidden;
 }
@@ -529,11 +529,11 @@
   0% {
     box-shadow: 
       0 0 30px rgba(255, 255, 255, 0.3),
-      inset 0 0 30px rgba(107, 66, 38, 0.1);
+      inset 0 0 30px rgba(128, 0, 32, 0.1);
   }
   100% {
     box-shadow: 
       0 0 40px rgba(255, 255, 255, 0.5),
-      inset 0 0 40px rgba(107, 66, 38, 0.2);
+      inset 0 0 40px rgba(128, 0, 32, 0.2);
   }
 }
