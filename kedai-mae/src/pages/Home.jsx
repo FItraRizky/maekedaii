@@ -142,15 +142,18 @@ const Home = () => {
             </motion.div>
 
             <motion.div 
-              className="feature-card"
+              className="feature-card clickable"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
+              onClick={() => window.location.href = '/menu'}
+              style={{ cursor: 'pointer' }}
             >
               <div className="feature-icon">Cepat</div>
               <h3>Pelayanan Cepat</h3>
               <p>Sistem pemesanan yang efisien untuk pengalaman yang memuaskan</p>
+              <div className="feature-action">Klik untuk pesan sekarang →</div>
             </motion.div>
 
             <motion.div 

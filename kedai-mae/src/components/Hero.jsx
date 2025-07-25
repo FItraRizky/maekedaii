@@ -84,7 +84,7 @@ const Hero = () => {
               <span>Bahan Segar</span>
             </div>
             
-            <div className="feature-item">
+            <div className="feature-item clickable" onClick={() => window.location.href = '/menu'} style={{ cursor: 'pointer' }}>
               <div className="feature-icon">Cepat</div>
               <span>Pelayanan Cepat</span>
             </div>

@@ -117,6 +117,29 @@
   line-height: 1.6;
 }
 
+.feature-card.clickable {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.feature-card.clickable:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 25px 50px rgba(139, 69, 19, 0.25);
+  background: linear-gradient(135deg, var(--primary-white) 0%, var(--cream) 100%);
+}
+
+.feature-action {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: var(--primary-brown);
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.feature-card.clickable:hover .feature-action {
+  opacity: 1;
+}
+
 .testimonials-section {
   padding: 80px 0;
   background: var(--primary-white);
