@@ -39,11 +39,11 @@ const Hero = () => {
               <span className="hero-brand">Kedai Mae</span>
             </h1>
             
-            <p className="hero-subtitle">
+            {/* <p className="hero-subtitle">
               Cita rasa autentik Indonesia dengan sentuhan modern. 
               Dibuat dengan bahan-bahan segar dan resep turun temurun 
               yang telah terjaga kualitasnya.
-            </p>
+            </p> */}
             
             <div className="hero-buttons">
               <motion.div
