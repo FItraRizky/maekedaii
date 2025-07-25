@@ -578,35 +578,7 @@
   }
 }
 
-/* Dark mode styles */
-.dark-mode .contact-info-section {
-  background: var(--primary-white);
-}
 
-.dark-mode .contact-form-section {
-  background: var(--cream);
-}
-
-.dark-mode .faq-section {
-  background: var(--primary-white);
-}
-
-.dark-mode .contact-info-card,
-.dark-mode .contact-form-container,
-.dark-mode .map-container {
-  background: var(--primary-white);
-  border: 1px solid var(--light-gray);
-}
-
-.dark-mode .form-input,
-.dark-mode .form-textarea {
-  background: var(--primary-white);
-  border-color: var(--light-gray);
-}
-
-.dark-mode .faq-item {
-  background: var(--cream);
-}
 
 /* Animation enhancements */
 .contact-info-card,

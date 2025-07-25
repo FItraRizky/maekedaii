@@ -350,29 +350,7 @@
   }
 }
 
-/* Dark mode styles */
-.dark-mode .menu-page {
-  background: var(--primary-white);
-}
 
-.dark-mode .search-input {
-  background: var(--primary-white);
-  border-color: var(--light-gray);
-}
-
-.dark-mode .category-btn {
-  background: var(--primary-white);
-  border-color: var(--light-gray);
-}
-
-.dark-mode .no-results {
-  background: var(--cream);
-  border-color: var(--light-gray);
-}
-
-.dark-mode .popular-section {
-  background: var(--cream);
-}
 
 /* Loading animation for menu items */
 .menu-grid.loading {

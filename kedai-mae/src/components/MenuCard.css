@@ -229,25 +229,7 @@
   }
 }
 
-/* Dark mode styles */
-.dark-mode .menu-card {
-  background: var(--primary-white);
-  color: var(--text-dark);
-}
 
-.dark-mode .menu-card-title {
-  color: var(--primary-brown);
-}
-
-.dark-mode .menu-card-price {
-  background: var(--cream);
-  color: var(--primary-brown);
-}
-
-.dark-mode .menu-card-category {
-  background: rgba(128, 0, 32, 0.2);
-  color: var(--primary-brown);
-}
 
 /* Loading skeleton */
 .menu-card.loading {

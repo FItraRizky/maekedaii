@@ -332,41 +332,7 @@
   }
 }
 
-/* Dark mode styles */
-.dark-mode .cart-sidebar {
-  background: var(--primary-white);
-}
 
-.dark-mode .cart-header {
-  background: var(--cream);
-  border-bottom: 1px solid var(--light-gray);
-}
-
-.dark-mode .cart-summary {
-  background: var(--cream);
-  border-top: 1px solid var(--light-gray);
-}
-
-.dark-mode .cart-item {
-  border-bottom: 1px solid var(--light-gray);
-}
-
-.dark-mode .quantity-controls {
-  background: var(--light-gray);
-}
-
-.dark-mode .quantity-btn {
-  background: var(--primary-white);
-}
-
-.dark-mode .clear-cart-btn {
-  border: 1px solid var(--light-gray);
-  color: var(--text-dark);
-}
-
-.dark-mode .clear-cart-btn:hover {
-  background: var(--light-gray);
-}
 
 /* Scrollbar styling */
 .cart-items::-webkit-scrollbar {

@@ -4,7 +4,6 @@ import React, { createContext, useContext, useReducer, useEffect } from 'react';
 const initialState = {
   cartItems: [],
   isCartOpen: false,
-  isDarkMode: false,
   isLoading: true
 };
 
@@ -15,7 +14,6 @@ const actionTypes = {
   UPDATE_QUANTITY: 'UPDATE_QUANTITY',
   CLEAR_CART: 'CLEAR_CART',
   TOGGLE_CART: 'TOGGLE_CART',
-  TOGGLE_DARK_MODE: 'TOGGLE_DARK_MODE',
   SET_LOADING: 'SET_LOADING'
 };
 
@@ -68,12 +66,6 @@ const appReducer = (state, action) => {
         isCartOpen: !state.isCartOpen
       };
 
-    case actionTypes.TOGGLE_DARK_MODE:
-      return {
-        ...state,
-        isDarkMode: !state.isDarkMode
-      };
-
     case actionTypes.SET_LOADING:
       return {
         ...state,
@@ -95,20 +87,12 @@ export const AppProvider = ({ children }) => {
   // Load data from localStorage on mount
   useEffect(() => {
     const savedCartItems = localStorage.getItem('kedaiMaeCart');
-    const savedDarkMode = localStorage.getItem('kedaiMaeDarkMode');
 
     if (savedCartItems) {
       const cartItems = JSON.parse(savedCartItems);
       cartItems.forEach(item => {
         dispatch({ type: actionTypes.ADD_TO_CART, payload: item });
       });
-    }
-
-    if (savedDarkMode) {
-      const isDarkMode = JSON.parse(savedDarkMode);
-      if (isDarkMode) {
-        dispatch({ type: actionTypes.TOGGLE_DARK_MODE });
-      }
     }
 
     // Simulate loading
@@ -121,16 +105,6 @@ export const AppProvider = ({ children }) => {
   useEffect(() => {
     localStorage.setItem('kedaiMaeCart', JSON.stringify(state.cartItems));
   }, [state.cartItems]);
-
-  // Save dark mode preference
-  useEffect(() => {
-    localStorage.setItem('kedaiMaeDarkMode', JSON.stringify(state.isDarkMode));
-    if (state.isDarkMode) {
-      document.body.classList.add('dark-mode');
-    } else {
-      document.body.classList.remove('dark-mode');
-    }
-  }, [state.isDarkMode]);
 
   // Action creators
   const addToCart = (item) => {
@@ -151,10 +125,6 @@ export const AppProvider = ({ children }) => {
 
   const toggleCart = () => {
     dispatch({ type: actionTypes.TOGGLE_CART });
-  };
-
-  const toggleDarkMode = () => {
-    dispatch({ type: actionTypes.TOGGLE_DARK_MODE });
   };
 
   const setLoading = (loading) => {
@@ -179,7 +149,6 @@ export const AppProvider = ({ children }) => {
     updateQuantity,
     clearCart,
     toggleCart,
-    toggleDarkMode,
     setLoading,
     cartTotal,
     cartItemCount

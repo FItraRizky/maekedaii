@@ -175,20 +175,6 @@ html {
   100% { transform: rotate(360deg); }
 }
 
-/* Dark mode styles */
-.dark-mode {
-  --primary-white: #000000;
-  --text-dark: #ffffff;
-  --text-light: #ffffff;
-  --light-gray: #1a1a1a;
-  --cream: #111111;
-  --shadow: rgba(255, 255, 255, 0.1);
-}
-
-.dark-mode .card {
-  background: #000000;
-  color: var(--text-dark);
-}
 
 /* Scroll to top button */
 .scroll-to-top {

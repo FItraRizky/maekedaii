@@ -464,15 +464,7 @@
   }
 }
 
-/* Dark mode compatibility */
-.dark-mode .loading-screen {
-  background: linear-gradient(
-    135deg,
-    var(--primary-brown) 0%,
-    var(--dark-brown) 50%,
-    var(--primary-brown) 100%
-  );
-}
+
 
 /* Additional animations */
 .loading-content {

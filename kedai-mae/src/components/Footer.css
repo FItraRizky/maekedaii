@@ -560,14 +560,7 @@
   }
 }
 
-/* Dark mode styles */
-.dark-mode .footer {
-  background: linear-gradient(
-    135deg,
-    var(--primary-brown) 0%,
-    var(--dark-brown) 100%
-  );
-}
+
 
 /* Animation enhancements */
 .footer-section {

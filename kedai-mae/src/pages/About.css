@@ -613,29 +613,7 @@
   }
 }
 
-/* Dark mode styles */
-.dark-mode .story-section {
-  background: var(--primary-white);
-}
 
-.dark-mode .values-section {
-  background: var(--cream);
-}
-
-.dark-mode .team-section {
-  background: var(--primary-white);
-}
-
-.dark-mode .mission-section {
-  background: var(--cream);
-}
-
-.dark-mode .value-card,
-.dark-mode .team-card,
-.dark-mode .mission-card {
-  background: var(--primary-white);
-  border: 1px solid var(--light-gray);
-}
 
 /* Animation enhancements */
 .value-card,

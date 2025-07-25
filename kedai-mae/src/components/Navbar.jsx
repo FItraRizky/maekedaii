@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Bars3Icon, XMarkIcon, ShoppingCartIcon, SunIcon, MoonIcon } from '@heroicons/react/24/outline';
+import { Bars3Icon, XMarkIcon, ShoppingCartIcon } from '@heroicons/react/24/outline';
 import { useApp } from '../context/AppContext';
 import './Navbar.css';
 
 const Navbar = () => {
-  const { cartItems, isDarkMode, toggleCart, toggleDarkMode } = useApp();
+  const { cartItems, toggleCart } = useApp();
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
@@ -59,35 +59,11 @@ const Navbar = () => {
                 </Link>
               </li>
             ))}
-            {/* Dark Mode Toggle for Mobile */}
-            <li>
-              <button className="mobile-dark-mode-toggle" onClick={() => { toggleDarkMode(); closeMenu(); }}>
-                {isDarkMode ? (
-                  <>
-                    {/* <SunIcon className="mobile-theme-icon" /> */}
-                    {/* <span>Mode Terang</span> */}
-                  </>
-                ) : (
-                  <>
-                    {/* <MoonIcon className="mobile-theme-icon" /> */}
-                    {/* <span>Mode Gelap</span> */}
-                  </>
-                )}
-              </button>
-            </li>
+
           </ul>
 
-          {/* Cart, Dark Mode Toggle and Mobile Menu Button */}
+          {/* Cart and Mobile Menu Button */}
           <div className="navbar-actions">
-            {/* Dark Mode Toggle */}
-            <button className="dark-mode-toggle" onClick={toggleDarkMode}>
-              {isDarkMode ? (
-                <SunIcon className="theme-icon" />
-              ) : (
-                <MoonIcon className="theme-icon" />
-              )}
-            </button>
-
             {/* Cart Button */}
             <button className="cart-button" onClick={toggleCart}>
               <ShoppingCartIcon className="cart-icon" />

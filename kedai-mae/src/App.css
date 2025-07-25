@@ -14,10 +14,7 @@
   padding-top: 80px;
 }
 
-/* Dark mode styles */
-.dark-mode .App {
-  background: #000000;
-}
+
 
 /* Loading states */
 .loading {
@@ -244,16 +241,4 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--dark-brown);
-}
-
-.dark-mode ::-webkit-scrollbar-track {
-  background: var(--dark-brown);
-}
-
-.dark-mode ::-webkit-scrollbar-thumb {
-  background: var(--cream);
-}
-
-.dark-mode ::-webkit-scrollbar-thumb:hover {
-  background: var(--primary-white);
 }
